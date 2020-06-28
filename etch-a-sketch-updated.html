@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <script type ="text/javascript" src="etch-a-sketch.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@150&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="etch-a-sketch.css" media="screen"/>
+    <body onload = 'sizer()'>
+        <header>
+        <center>
+    <h1>Etch a sketch</h1>
+        </center>
+       <button onclick = "done()" id = "btn" class = "button">Clear</button> 
+       <label><input id = 'data' type ="number" placeholder="Grid Size"></label>
+        <input onclick = 'change()' type = 'submit' class = 'button' id = 'fini'>
+        <label class="switch"><input type="checkbox" id ="togBtn"><div class="slider round"></span></div></label>
+        </header> 
+        <center> 
+        <div onload='sizer()' onmouseover="runover()"  class = 'container ' id = 'container' ></div>
+        </center>
+    </body>
+</html>
